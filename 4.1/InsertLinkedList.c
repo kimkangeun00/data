@@ -6,7 +6,7 @@
 linkedList_h* createLinkedList_h(void) {
     linkedList_h* L = malloc(sizeof(linkedList_h));
     if (L == NULL) {
-        printf("�޸� �Ҵ� ����\n");
+        printf("¸Þ¸ð¸® ÇÒ´ç ½ÇÆÐ\n");
         return NULL;
     }
     L->head = NULL;
