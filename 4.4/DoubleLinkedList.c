@@ -8,7 +8,7 @@ linkedList_h* createLinkedList_h(void) {
     linkedList_h* DL = (linkedList_h*)malloc(sizeof(linkedList_h));
 
     if (DL == NULL) {
-        printf("malloc Ω«∆–\n");
+        printf("malloc ¬Ω√á√Ü√ê\n");
         exit(1);
     }
 
