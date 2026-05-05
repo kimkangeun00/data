@@ -2,7 +2,7 @@
 #include "traversalBT.h"
 
 int main(void) {
-	// (A*B-C/D) ¼ö½Ä ÀÌÁø Æ®¸® ¸¸µé±â
+	// (A*B-C/D) Â¼Ã¶Â½Ã„ Ã€ÃŒÃÃ¸ Ã†Â®Â¸Â® Â¸Â¸ÂµÃ©Â±Ã¢
 	treeNode* n7 = makeRootNode('D', NULL, NULL);
 	treeNode* n6 = makeRootNode('C', NULL, NULL);
 	treeNode* n5 = makeRootNode('B', NULL, NULL);
