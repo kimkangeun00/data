@@ -2,7 +2,7 @@
 #include "folderSize.h"
 
 int main(void) {
-	//ÀÌÁø Æ®¸® »ı¼ºÇÏ±â
+	//ì´ì§„ íŠ¸ë¦¬ ìƒì„±í•˜ê¸°
 	treeNode* F11 = makeRootNode(120, NULL, NULL);
 	treeNode* F10 = makeRootNode(55, NULL, NULL);
 	treeNode* F9 = makeRootNode(100, NULL, NULL);
@@ -16,11 +16,11 @@ int main(void) {
 	treeNode* F1 = makeRootNode(0, F2, F3);
 
 	FolderSize = 0;
-	printf("\n\n C:\\ÀÇ ¿ë·® : %d M \n", postorder_FolderSize(F2));
+	printf("\n\n C:\\ì˜ ìš©ëŸ‰ : %d M \n", postorder_FolderSize(F2));
 	FolderSize = 0;
-	printf("\n D:\\ÀÇ ¿ë·® : %d M \n", postorder_FolderSize(F3));
+	printf("\n D:\\ì˜ ìš©ëŸ‰ : %d M \n", postorder_FolderSize(F3));
 	FolderSize = 0;
-	printf("\n ³» ÄÄÇ»ÅÍÀÇ ÀüÃ¼ ¿ë·® : %d M \n", postorder_FolderSize(F1));
+	printf("\n ë‚´ ì»´í“¨í„°ì˜ ì „ì²´ ìš©ëŸ‰ : %d M \n", postorder_FolderSize(F1));
 
 	getchar(); return 0;
 }
