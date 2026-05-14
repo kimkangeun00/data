@@ -8,10 +8,10 @@ int main(void) {
 	graphType* G3 = (graphType*)malloc(sizeof(graphType));
 	graphType* G4 = (graphType*)malloc(sizeof(graphType));
 
-	//G1 ±¸¼º : Á¤Á¡ u¿¡ ´ëÇÑ °£¼± (u,v)ÀÇ »ðÀÔ¼ø¼­´Â v°¡ Å« °ÍºÎÅÍ.
+	//G1 êµ¬ì„± : ì •ì  uì— ëŒ€í•œ ê°„ì„  (u,v)ì˜ ì‚½ìž…ìˆœì„œëŠ” vê°€ í° ê²ƒë¶€í„°.
 	createGraph(G1);
 	for (i = 0; i < 4; i++)
-		insertVertex(G1, i);	//G1ÀÇ Á¤Á¡ 0~3 »ðÀÔ
+		insertVertex(G1, i);	//G1ì˜ ì •ì  0~3 ì‚½ìž…
 	insertEdge(G1, 0, 3);
 	insertEdge(G1, 0, 1);
 	insertEdge(G1, 1, 3);
@@ -23,10 +23,10 @@ int main(void) {
 	insertEdge(G1, 3, 1);
 	insertEdge(G1, 3, 0);
 
-	//G2 ±¸¼º : Á¤Á¡ u¿¡ ´ëÇÑ °£¼± (u,v)ÀÇ »ðÀÔ¼ø¼­´Â v°¡ Å« °ÍºÎÅÍ.
+	//G2 êµ¬ì„± : ì •ì  uì— ëŒ€í•œ ê°„ì„  (u,v)ì˜ ì‚½ìž…ìˆœì„œëŠ” vê°€ í° ê²ƒë¶€í„°.
 	createGraph(G2);
 	for (i = 0; i < 3; i++)
-		insertVertex(G2, i);	// G2ÀÇ Á¤Á¡ 0~2 »ðÀÔ
+		insertVertex(G2, i);	// G2ì˜ ì •ì  0~2 ì‚½ìž…
 	insertEdge(G2, 0, 2);
 	insertEdge(G2, 0, 1);
 	insertEdge(G2, 1, 2);
@@ -34,36 +34,36 @@ int main(void) {
 	insertEdge(G2, 2, 1);
 	insertEdge(G2, 2, 0);
 
-	//G3 ±¸¼º : Á¤Á¡ u¿¡ ´ëÇÑ °£¼± <u,v>ÀÇ »ðÀÔ¼ø¼­´Â v°¡ Å« °ÍºÎÅÍ.
+	//G3 êµ¬ì„± : ì •ì  uì— ëŒ€í•œ ê°„ì„  <u,v>ì˜ ì‚½ìž…ìˆœì„œëŠ” vê°€ í° ê²ƒë¶€í„°.
 	createGraph(G3);
 	for (i = 0; i < 4; i++)
-		insertVertex(G3, i);	// G3ÀÇ Á¤Á¡ 0~3 »ðÀÔ
+		insertVertex(G3, i);	// G3ì˜ ì •ì  0~3 ì‚½ìž…
 	insertEdge(G3, 0, 3);
 	insertEdge(G3, 0, 1);
 	insertEdge(G3, 1, 3);
 	insertEdge(G3, 1, 2);
 	insertEdge(G3, 2, 3);
 
-	//G4 ±¸¼º : Á¤Á¡ u¿¡ ´ëÇÑ °£¼± <u,v>ÀÇ »ðÀÔ¼ø¼­´Â v°¡ Å« °ÍºÎÅÍ.
+	//G4 êµ¬ì„± : ì •ì  uì— ëŒ€í•œ ê°„ì„  <u,v>ì˜ ì‚½ìž…ìˆœì„œëŠ” vê°€ í° ê²ƒë¶€í„°.
 	createGraph(G4);
 	for (i = 0; i < 3; i++)
-		insertVertex(G4, i);	// G4ÀÇ Á¤Á¡ 0~2 »ðÀÔ
+		insertVertex(G4, i);	// G4ì˜ ì •ì  0~2 ì‚½ìž…
 	insertEdge(G4, 0, 2);
 	insertEdge(G4, 0, 1);
 	insertEdge(G4, 1, 2);
 	insertEdge(G4, 1, 0);
 	
-	//--- ¿Ï¼ºµÈ ÀÎÁ¢ Çà·Ä Ãâ·Â
-	printf("\n G1ÀÇ ÀÎÁ¢ Çà·Ä");
+	//--- ì™„ì„±ëœ ì¸ì ‘ í–‰ë ¬ ì¶œë ¥
+	printf("\n G1ì˜ ì¸ì ‘ í–‰ë ¬");
 	print_adjMatrix(G1);
 
-	printf("\n\n G2ÀÇ ÀÎÁ¢ Çà·Ä");
+	printf("\n\n G2ì˜ ì¸ì ‘ í–‰ë ¬");
 	print_adjMatrix(G2);
 
-	printf("\n\n G3ÀÇ ÀÎÁ¢ Çà·Ä");
+	printf("\n\n G3ì˜ ì¸ì ‘ í–‰ë ¬");
 	print_adjMatrix(G3);
 	
-	printf("\n\n G4ÀÇ ÀÎÁ¢ Çà·Ä");
+	printf("\n\n G4ì˜ ì¸ì ‘ í–‰ë ¬");
 	print_adjMatrix(G4);
 
 	getchar();  return 0;
